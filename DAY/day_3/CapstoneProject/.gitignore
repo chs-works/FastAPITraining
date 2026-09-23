@@ -1,0 +1,77 @@
+# ==========================================
+# FastAPI & Application Specific
+# ==========================================
+# Local environment variables containing sensitive credentials (API keys, DB passwords)
+.env
+.env.[a-zA-Z]*
+!.env.example
+
+# Local SQLite databases (frequently used during local FastAPI development)
+*.db
+*.sqlite3
+*.sqlite3-journal
+
+# Application log directories
+logs/
+*.log
+
+# FastAPI generated OpenAPI schemas (if you export them locally)
+openapi.json
+
+# ==========================================
+# Python Byte-Compiled & C-Extensions
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# ==========================================
+# Virtual Environments & Dependency Managers
+# ==========================================
+# Standard Python virtual environments
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# pipenv
+# Note: It is recommended to commit Pipfile.lock, but ignore the runtime cache
+.pipenv/
+
+# poetry
+# Note: Always commit poetry.lock; ignore only local build artifacts
+dist/
+build/
+
+# uv (Modern fast package manager)
+.uv/
+
+# ==========================================
+# Testing & Code Quality
+# ==========================================
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+.hypothesis/
+
+# ==========================================
+# IDEs and Editors
+# ==========================================
+# VS Code
+.vscode/
+!.vscode/extensions.json
+
+# PyCharm / JetBrains
+.idea/
+
+# Editor backups
+*.swp
+*~
+.DS_Store
